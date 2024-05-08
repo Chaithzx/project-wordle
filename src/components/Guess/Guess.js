@@ -1,9 +1,8 @@
 import React from "react";
 import { range } from "../../utils";
 import { checkGuess } from "../../game-helpers";
-import { answer } from "../Game";
 
-function Guess({ value }) {
+function Guess({ value, answer }) {
   let validatedGuess = checkGuess(value, answer);
 
   return (
